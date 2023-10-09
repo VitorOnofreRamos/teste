@@ -1,5 +1,10 @@
-while alunos == 0 and notas == 0:
-    alunos = int(input("Insira a quantidade de alunos que realizaram o teste: "))
-    notas = int(input("Insira a quantidade de notas dos alunos que realizaram o teste: "))
-    if notas < alunos:
-        print('O número de notas qu')
+alunos = int(input('Quantidade de alunos: '))
+notas = int(input('Quantidade de notas: '))
+
+for i in range(alunos):
+    soma = 0
+    for n in range(notas):
+        nota = float(input('Informe as nota: '))
+        soma += nota
+    media = soma / notas
+    print(f'Media: {media:.2f}')
